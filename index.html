@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <meta property="og:image" content="./image/avatar.jpg"/>
+    <meta property="og:title" content="Toee Thiha Kyaw"/>
+    <link rel="shortcut icon" href="./image/avatar.jpg">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: ios;
+            cursor: pointer;
+        }
+        @font-face {
+            font-family: ios;
+            src: url("./font/SF-Pro-Display-Medium.ttf");
+        }
+        ::-webkit-scrollbar {
+            width: 7px;
+            height: 0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 5px;
+            border: 2px solid white;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            padding: 10px;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .container > div:nth-child(1) {
+            float: left;
+            width: 40%;
+        }
+        .container > div:nth-child(2) {
+            float: left;
+            width: 60%;
+        }
+        .firstRow > div {
+            background: none;
+            border: 3px solid #eee;
+            margin: 15px;
+        }
+        .firstRow {
+            display: inline-block;
+        }
+        .profile {
+            text-align: center;
+            padding: 10px;
+            background: red;
+        }
+        .profile, .contact {
+            background: red;
+        }
+        .profile > div,h2 , p {
+            margin: 8px;
+        }
+        .photo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .photo > img {
+            object-fit: contain;
+            width: 150px;
+            border-radius: 100%;
+        }
+        table {
+            width: 100%;
+            padding: 20px ;
+        }
+        table td:nth-child(even){
+            width: 70%;
+        }
+        table td  {
+            padding: 10px;
+        }
+        
+
+
+        .secondRow {
+            padding:5px ;
+        }
+        .secondRow > div {
+            background: none;
+            margin: 5px 0;
+            float: left;
+        }
+        .userInfo {
+            width: 100%;
+        }
+        .skill  , .project {
+            width: 50%;
+        }
+        .skill progress {
+            width: 100%;
+        }
+        .userInfo > div , .skill > div ,.project > div {
+            margin: 5px 5px;
+            border: 3px solid #eee;
+        }
+        a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: black;
+            background: #ebe1e3;
+            transition: 0.2s;
+        }
+        a:hover {
+            box-shadow: -3px 3px 0 0 black;
+            transform: scale(5);
+        }
+
+        @media only screen and (max-width:940px){
+            .container > div:nth-child(1) {
+                float: left;
+                width: 100%;
+            }
+            .container > div:nth-child(2) {
+                float: left;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px){
+            .skill  , .project {
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 360px){
+            .container {
+                zoom: 0.9;
+            }
+        }
+        @media only screen and (max-width: 350px){
+            .container {
+                zoom: 0.8;
+            }
+        }
+        @media only screen and (max-width: 315px){
+            .container {
+                zoom: 0.7;
+            }
+        }
+        @media only screen and (max-width: 275px){
+            .container {
+                zoom: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--first row-->
+        <div class="firstRow">
+            <div class="profile">
+                <div>
+                    <div class="photo">
+                        <img src="./image/avatar.jpg" alt="">
+                    </div>
+                    <h2>Toee Thiha Kyaw</h2>
+                    <p>Web Developer , Freelancer</p>
+                    <p>Nay Pyi Taw , Lewe</p>
+                </div>
+            </div>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <td>Website</td>
+                        <td><b>t-web-ai.github.io/project</b></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td><b>github.com/t-web-ai</b></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><b>toee_thiha_kyaw</b></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><b>toepwar984@gmail.com</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--second row-->
+        <div class="secondRow">
+            <div class="userInfo">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Full Name</td>
+                            <td><b>Toee Thiha Kyaw</b></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><b>toepwar984@gmail.com</b></td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><b>+959777910521</b></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><b>Nay Pyi Taw, Lewe</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="skill">
+                <div>
+                    <h2><center>Skills</center></h2> 
+                    <table>
+                        <tr>
+                            <td>HTML</td>
+                            <td><progress max="100" value="80"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td><progress max="100" value="70"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>JS</td>
+                            <td><progress max="100" value="70"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td><progress max="100" value="50"></progress></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery</td>
+                            <td><progress max="100" value="45"></progress></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="project">
+                <div>
+                    <h2><center>Projects</center></h2>
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="https://webmsg17.000webhostapp.com">
+                                    Messenger System
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://t-web-ai.github.io/profile">
+                                    Profile
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
